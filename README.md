@@ -103,9 +103,8 @@ ACES Container is the reference implementation for a file writer intended to be 
 	Install aces_container
 	
 	```sh
-	git clone https://github.com/miaoqi/aces_container.git
+	git clone https://github.com/ampas/aces_container.git
 	cd aces_container
-	git checkout windowBuildSupport
 	
 	mkdir build && cd build
 	cmake ..
@@ -206,9 +205,10 @@ Ceres Solver is an open source library for solving Non-linear Least Squares prob
 	sudo apt-get install libsuitesparse-dev
 	```
 	
-	Build, Test and Install `Ceres`
+	Build, Test and Install `Ceres` (replace `version#` with the last one)
 	
 	``` sh
+	wget http://ceres-solver.org/ceres-solver-version#.tar.gz
 	tar zxf ceres-solver-version#.tar.gz
 	mkdir ceres-bin
 	cd ceres-bin
@@ -283,6 +283,7 @@ Ceres Solver is an open source library for solving Non-linear Least Squares prob
 	
 	```sh
 	$ git clone https://github.com/ampas/rawtoaces
+	$ cd rawtoaces
 	$ mkdir build && cd build
 	$ cmake ..
 	$ make
